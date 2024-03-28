@@ -6,4 +6,10 @@ def main(list_num):
     Returns:
         int: return answer
     """
-    return
+    if list_num[0]>list_num[-1]:
+        return list_num[0]
+    elif list_num[0]<list_num[-1]:
+        return list_num[-1]
+    else:
+        return "Equal"
+print(main([12, 2, 5, 2, 7, 9, 1]))
